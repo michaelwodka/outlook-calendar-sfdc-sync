@@ -21,3 +21,5 @@ import pandas as pd #imports Pandas to create a table in Python
 from openpyxl.styles import Font, Color, PatternFill
 import win32timezone
 ```
+# License
+See the LICENSE file for license rights and limitations (MIT).
