@@ -1,6 +1,6 @@
 # python-outlook-calendar-sfdc-sync
 This project allows you to download you calendar/appointments from Microsoft Outlook into an Excel spreadsheet and then
-upload the appointment data as Salesforce events related to contacts and opportunties. The script is written in Python. The calendar download/upload processes are executed via a Python Ttkinter GUI application and simple-salesforce script. This script can only be run on a Windows machine.
+upload the appointment data as Salesforce events related to contacts and opportunties. The script is written in Python. The calendar download/upload processes are executed via a Python Ttkinter GUI application and simple-salesforce API call. This script can only be run on a Windows machine.
 
 # Getting Started
 You will need to install several python libraries to get this project running on your local Windows machine. You will also need to valid Salesforce account to be able to make the API calls when uploading calendar to Salesforce.
