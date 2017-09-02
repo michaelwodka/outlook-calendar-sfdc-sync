@@ -33,6 +33,8 @@ When running it the first time, you will want to select "Outlook Download" and t
 
 Once you click the "Outlook Download" button, a second Tkinter GUI window will appear with the following screen:
 
+![alt text](screenshots/GUISS2.png "Tkinter GUI Applications Window 2")
+
 In the first section, you have choices on whether to download your calendar based on pre-set date ranges (e.g., today, last week) or based on custom date ranges (08/01/XXXX - 09/05/XXXX). Click the corresponding green "Ok" button next to your selected choice to begin downloading your calendar.
 
 The second section contains some advanced features such as including internal calendar events as well as downloading a shared calendar. ***Note: The internal calendar feature is based on analyzing appointment attendees' email domains and including events where everyone has a "cebglobal.com" domain (since "CEB Global" is the company I worked for when creating this script). By default, the script excludes events where everyone has "cebglobal.com", since we were only interested in external client meetings to sync with Salesforce.
