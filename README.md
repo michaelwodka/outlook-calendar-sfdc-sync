@@ -4,7 +4,8 @@ upload the appointment data to contacts and opportunties in Salesforce. The scri
 processes are executed via a Python Ttkinter GUI application and simple-salesforce script. This script can only be run on a Windows machine.
 
 # Getting Started
-You will need to install several python libraries to get this project running on your local machine.
+You will need to install several python libraries to get this project running on your local Windows machine. You will also need to valid Salesforce account to be able to make the API calls when uploading calendar to Salesforce.
+
 ```
 from tkinter import *                                   # for Tkinter GUI application
 import tkinter as tk                                    # for Tkinter GUI application
@@ -21,5 +22,19 @@ import pandas as pd                                     # for creating Pandas ta
 from openpyxl.styles import Font, Color, PatternFill    # for making design edits (color, font) in Excel workbook
 import win32timezone                                    # for setting timezones for dates
 ```
+You will also need to download the "SFDC Outlook Synchronization" folder and copy it directly into your C-drive.
+
+# Running the Script
+When you run the script, the Tkinter GUI application will initialize and present you with the following screen:
+
+When running it the first time, you will want to select "Outlook Download" and then press "Ok" to start the calendar download process. We will explore the "Outlook SFDC Upload" button a little later.
+
+Once you click the "Outlook Download" button, a second Tkinter GUI window will appear with the following screen:
+
+In the first section, you have choices on whether to download your calendar based on pre-set date ranges (e.g., today, last week) or based on custom date ranges (08/01/XXXX - 09/05/XXXX). Click the corresponding green "Ok" button next to the choice to begin downloading your calendar.
+
+The second section contains some advanced features such as including internal calendar events as well as downloading a shared calendar. ***Note: The internal calendar feature is based on analyzing appointment attendees' email domains and including events where everyone has a "cebglobal.com" domain (since this is the company I worked for when creating this script). By default, the script excludes events where everyone has "cebglobal.com", since we were only interested in client meetings to sync with Salesforce.
+
+
 # License
 See the LICENSE file for license rights and limitations (MIT).
