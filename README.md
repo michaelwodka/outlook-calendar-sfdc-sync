@@ -5,3 +5,19 @@ process are executed via a Python Ttkinter GUI application and simple-salesforce
 
 # Getting Started
 You will need to install several python libraries to get this project running on your local machine.
+```
+from tkinter import *
+import tkinter as tk
+import os 
+import datetime as dt
+from dateutil.relativedelta import relativedelta
+import pytz
+from openpyxl import load_workbook
+import win32com.client
+import win32api
+import xlrd
+from simple_salesforce import Salesforce
+import pandas as pd #imports Pandas to create a table in Python
+from openpyxl.styles import Font, Color, PatternFill
+import win32timezone
+```
