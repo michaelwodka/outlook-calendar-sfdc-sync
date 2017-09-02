@@ -21,9 +21,9 @@ import pandas as pd                                     # for creating Pandas ta
 from openpyxl.styles import Font, Color, PatternFill    # for making design edits (color, font) in Excel workbook
 import win32timezone                                    # for setting timezones for dates
 ```
-You will also need to create a directory in your C-drive called "SFDC Outlook Synchronization" folder. You will need to create to sub-folders called "SFDC_Admin" and "Previous Uploads". Copy the "SFDC_Admin.xlsx" file into the "SFDC_Admin" folder and copy the "Outlook Sync.xlsx" file into the general "SFDC Outlook Synchronization" folder.
+You will also need to create a directory in your C-drive called "SFDC Outlook Synchronization" folder. You will need to create two sub-folders called "SFDC_Admin" and "Previous Uploads". Copy the "SFDC_Admin.xlsx" file into the "SFDC_Admin" folder and copy the "Outlook Sync.xlsx" file into the general "SFDC Outlook Synchronization" folder.
 
-In the "SFDC_Admin.xlsx" file, you will need to enter SFDC username in cell B1, SFDC passwoard in cell B2, and SFDC Security token in cell B3. Please contact you SFDC administrator to find out this information if you don't know already.
+In the "SFDC_Admin.xlsx" file, you will need to enter your SFDC username in cell B1, SFDC password in cell B2, and SFDC security token in cell B3. Please contact you SFDC administrator to find out this information if you don't know already.
 
 # Running the Script
 When you run the script, the Tkinter GUI application will initialize and present you with the following screen:
